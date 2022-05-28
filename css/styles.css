@@ -5,43 +5,219 @@
   --second-title-color: #212121;
   --after-title-color: #757575;
   --accent-color: #2196f3;
+  --first-background-color: #ffffff;
+  --second-background-color: #2F303A;
+  --after-backround-color: #F5F4FA;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  /*---HEADER---*/
+ font-family: 'Roboto', sans-serif;
+ background-color: var(--first-background-color);
+ color: var(--header-text-color);
 }
-.header {
-  background-color: #ffffff;
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link{
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.logo {
+ font-family: Raleway, sans-serif;
+ font-weight: 700;
+ font-size: 26px;
+ line-height: 1.19;
+ letter-spacing: 0.03em;
+ color: #2196F3;
+}
+.logo-header,
+.logo-footer {
+  color:#000000;
+}
+.navigation .link.current{
+  color: var(--accent-color);
 }
 .header-link {
+  list-style: none;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
-a {
-  text-decoration: none;
+.header-contact-mail{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--after-title-color);
+}
+.header-contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--after-title-color);
+}
+.header-contact-list .link:hover,
+.header-contact-list .link:focus {
+  color: var(--accent-color);
+}
+.hero{
+  background-color: var(--second-background-color);
+}
+.hero-item{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--firts-title-color);
 }
 .hero-btn {
   font-family: inherit;
-  font-style: normal;
-  font-weight: bold;
+  cursor: pointer;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--button-color);
+  background-color: var(--accent-color)
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
+  background-color: #188CE8
+}
+
+ /* Особенности */
+.about-pre-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-after-title{
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--after-title-color);
+}
+
+/*Чем мы занимаемся*/
+.promo-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*Наша команда*/
+.team{
+  background-color: var(--after-backround-color);
+}
+.team-item{
+  background-color: var(--first-background-color)
+}
+.team-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-pre-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-after-title{
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--after-title-color);
+}
+
+/*Подвал сайта*/
+.footer{
+  background-color: var(--second-background-color);
+}
+.logo-footer{
+  color: #ffffff
+}
+.footer-list{
+  font-style: normal;
+}
+.footer-contact-location{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--firts-title-color);
+}
+
+.footer-contact-mail{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact-tel{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list .link:hover,
+.footer-list .link:focus {
   color: var(--accent-color);
+}
+
+/*Страница сайта портфолио*/
+.btn-link{
+ font-family: inherit;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1.62;
+ text-align: center;
+ letter-spacing: 0.03em;
+ color: var(--second-title-color);
+ background-color: var(--after-backround-color);
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--button-color);
+  background-color: var(--accent-color);
+}
+.features-pre-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-title-color);
+}
+.features-after-title{
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--after-title-color);
 }
